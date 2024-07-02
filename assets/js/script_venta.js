@@ -44,6 +44,28 @@ const propiedades_venta = [
         costo: 4500,
         smoke: false,
         pets: true
+    },
+    {
+        nombre: 'Hermosa casa en buen condominio',
+        src: 'https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        descripcion: 'Esta casa ofrece las mejores comodidades para la familia.',
+        ubicacion: '111B, Albuquerque, SA 9002.',
+        habitaciones: 5,
+        baños: 3,
+        costo: 5000,
+        smoke: true,
+        pets: true
+    },
+    {
+        nombre: 'Hermosa casa en la montaña',
+        src: 'https://images.pexels.com/photos/5524165/pexels-photo-5524165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        descripcion: 'Esta casa ofrece las mejores comodidades para pasar el tiempo en la montaña.',
+        ubicacion: '011, Muy Lejano, AS 922.',
+        habitaciones: 3,
+        baños: 3,
+        costo: 4500,
+        smoke: true,
+        pets: true
     }
 
 ];

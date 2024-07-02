@@ -42,6 +42,28 @@ const propiedades_alquiler = [
         costo: 2500,
         smoke: false,
         pets: false
+    },
+    {
+        nombre: 'Apartamento de lujo',
+        src: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        descripcion: 'Este elegante apartamento está ubicado en una zona exclusiva de la ciudad.',
+        ubicacion: '133 Main Street, Anytown, CA 91234',
+        habitaciones: 3,
+        baños: 2,
+        costo: 2500,
+        smoke: false,
+        pets: false
+    },
+    {
+        nombre: 'Cabaña en la montaña',
+        src: 'https://images.pexels.com/photos/774250/pexels-photo-774250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        descripcion: 'Esta acogedora cabaña se encuentra en un zona para descansar y respirar aire limpio',
+        ubicacion: '05 Nevados de algun lugar, RA 777',
+        habitaciones: 1,
+        baños: 1,
+        costo: 1000,
+        smoke: true,
+        pets: false
     }
 
 ]
