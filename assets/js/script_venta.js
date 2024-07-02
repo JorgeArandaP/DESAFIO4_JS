@@ -50,7 +50,7 @@ const propiedades_venta = [
 
 const propVenta = document.querySelector('.row');
 
-console.log('Aca');
+
 
 for (let prop of propiedades_venta) {
 
@@ -85,7 +85,7 @@ for (let prop of propiedades_venta) {
         texto_pet = 'text-success'
     }
 
-    console.log(icono_smoke);
+    
 
     const template = `
     <div class="col-md-4 mb-4">

@@ -45,3 +45,80 @@ const propiedades_alquiler = [
     }
 
 ]
+
+const propAlquiler = document.querySelector('.row');
+
+
+
+for (let prop of propiedades_alquiler) {
+
+    let icono_pet;
+    let frase_smoke;
+    let icono_smoke;
+    let frase_pet;
+    let texto_pet;
+    let texto_smoke; 
+
+    if (prop.smoke == false) {
+        icono_smoke = 'fas fa-smoking-ban';
+        frase_smoke = 'No se permite fumar'
+        texto_smoke = 'text-danger'
+    }
+
+    else if (prop.smoke == true) {
+        icono_smoke =  'fas fa-smoking';
+        frase_smoke = 'Permitido fumar'
+        texto_smoke = 'text-success'
+    }
+
+    if (prop.pets == false) {
+        icono_pet = 'fas fa-ban';
+        frase_pet = 'No se permiten mascotas'
+        texto_pet = 'text-danger'
+    }
+
+    else if (prop.pets == true) {
+        icono_pet = 'fas fa-paw';
+        frase_pet = 'Mascotas permitidas'
+        texto_pet = 'text-success'
+    }
+
+    
+
+    const template = `
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img
+                src="${prop.src}"
+                class="card-img-top"
+                alt="Imagen del departamento"
+            />
+            <div class="card-body">
+                <h5 class="card-title">
+                  ${prop.nombre}
+                </h5>
+                <p class="card-text">
+                  ${prop.descripcion}
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> ${prop.ubicacion}
+                </p>
+                <p>
+                  <i class="fas fa-bed"></i> ${prop.habitaciones} Habitaciones |
+                  <i class="fas fa-bath"></i> ${prop.baños} Baños
+                </p>
+                <p><i class="fas fa-dollar-sign"></i> ${prop.costo}</p>
+                
+                <p class="${texto_smoke}">
+                  <i class="${icono_smoke}"></i> ${frase_smoke}
+                </p>
+                <p class="${texto_pet}">
+                  <i class="${icono_pet}"></i> ${frase_pet}
+                </p>
+            </div>
+        </div>
+    </div>
+    `;
+
+    propAlquiler.innerHTML += template;
+}
